@@ -1,11 +1,12 @@
 // App.js
 import React from 'react';
-import Navbar from './components/Navbar'; // Make sure to provide the correct path to your Navbar component
+import Navbar from './components/Navbar'; // Adjust the path based on your project structure
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      
+       <Navbar /> 
     </div>
   );
 }

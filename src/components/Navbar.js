@@ -1,36 +1,35 @@
 // Navbar.js
-import { Navbar as BootstrapNavbar, Nav, NavDropdown, Container, Button } from 'react-bootstrap';
-
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Container, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './Navbar.css'; // Import the custom CSS file
 
 const Navbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#">
+    <nav className="custom-navbar">
+      <div className="logo-container">
+        <Link to="/">
           <img
-            src="path_to_your_logo_image.png" // Add the path to your logo image
+            src="path_to_your_logo_image.png"
             alt="Writealy Logo"
+            width="30"
             height="30"
+            className="d-inline-block align-top"
           />
-          <span style={{ color: '#303179', marginLeft: '10px' }}>Writealy</span>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#product">Product</Nav.Link>
-            <Nav.Link href="#use-cases">Use Cases</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <Nav.Link href="#customers">Customers</Nav.Link>
-            <Nav.Link href="#resources">Resources</Nav.Link>
-          </Nav>
-          <Nav>
-            <Button variant="outline-dark">Sign In</Button>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+          <span className="logo-text" style={{ color: '#303179' }}>Writealy</span>
+        </Link>
+      </div>
+
+      <div className="navbar-links">
+        <ul>
+          <li><Link to="/product">Product</Link></li>
+          <li><Link to="/use-cases">Use Cases</Link></li>
+          <li><Link to="/pricing">Pricing</Link></li>
+          <li><Link to="/customers">Customers</Link></li>
+          <li><Link to="/resources">Resources</Link></li>
+        </ul>
+        <Link to="/signin" className="sign-in-button">Sign In</Link>
+      </div>
+    </nav>
   );
 }
 
