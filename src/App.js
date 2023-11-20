@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import Navbar from './components/Navbar'; // Make sure to provide the correct path to your Navbar component
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-  <h1>Quiz</h1>
+    <div>
+      <Navbar />
     </div>
   );
 }
