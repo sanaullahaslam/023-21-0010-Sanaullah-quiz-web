@@ -20,11 +20,15 @@ const ContactUs = () => {
   };
 
   return (
-    <div style={{ backgroundColor: 'white', padding: '20px', borderRadius: '10px' }}>
-      <TextInput label="Full Name" value={fullName} onChangeText={setFullName} />
-      <TextInput label="Address" value={address} onChangeText={setAddress} />
-      <TextInput label="Phone" value={phone} onChangeText={setPhone} />
-      <TextInput label="Email" value={email} onChangeText={setEmail} />
+    <div style={{ backgroundColor: 'white', padding: '20px', borderRadius: '10px', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <TextInput label="Full Name" value={fullName} onChangeText={setFullName} />
+        <TextInput label="Address" value={address} onChangeText={setAddress} />
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '10px' }}>
+        <TextInput label="Phone" value={phone} onChangeText={setPhone} />
+        <TextInput label="Email" value={email} onChangeText={setEmail} />
+      </div>
       <textarea
         rows="4"
         placeholder="Description"
@@ -40,7 +44,7 @@ const ContactUs = () => {
           padding: '10px',
           borderRadius: '5px',
           marginTop: '20px',
-          float: 'right',
+          alignSelf: 'flex-end',
         }}
       >
         Submit
@@ -51,7 +55,7 @@ const ContactUs = () => {
 
 const TextInput = ({ label, value, onChangeText }) => {
   return (
-    <div style={{ marginBottom: '10px' }}>
+    <div style={{ flex: '1', marginRight: '10px' }}>
       <label>{label}</label>
       <input type="text" value={value} onChange={(e) => onChangeText(e.target.value)} style={{ width: '100%' }} />
     </div>
