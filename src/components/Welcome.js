@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import Pic from '../assets/Pic.PNG';
 
 const style=
 {
@@ -24,8 +23,15 @@ export default function Welcome()
                     </p>
 
                 </div>
+
+
                 <div className='col-md-6 col-sm-12'>
-                <h1>HEllo</h1>
+                 
+            <img
+              src={Pic} // Update with the path to your image
+              alt="Hello Image"
+              style={{ width: "100%", height: "auto" }}
+            />
                 </div>
             </div>
       </div>
