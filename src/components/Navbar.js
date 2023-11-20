@@ -1,15 +1,17 @@
 // Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/Logo.PNG';
 import './Navbar.css'; // Import the custom CSS file
+
 
 const Navbar = () => {
   return (
     <nav className="custom-navbar">
       <div className="logo-container">
         <Link to="/">
-          <img
-            src="path_to_your_logo_image.png"
+        <img
+            src={logo} // Use the imported image
             alt="Writealy Logo"
             width="30"
             height="30"
