@@ -1,12 +1,12 @@
-// App.js
-import React from 'react';
-import Navbar from './components/Navbar'; // Adjust the path based on your project structure
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Welcome from './components/Welcome';
+import Navbar from './components/Navbar';
 
-const App = () => {
+function App() {
   return (
     <div>
-      
-       <Navbar /> 
+     <Navbar/>
+      <Welcome />
     </div>
   );
 }
