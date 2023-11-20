@@ -1,5 +1,6 @@
 // Navbar.js
 import React from 'react';
+import Logo from '../assets/Logo.PNG';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
   const logoTextStyle = {
     marginLeft: '10px',
     fontSize: '1.2em',
-    color: 'white',
+    color: '#303179', // Updated color for Writealy text
     textDecoration: 'none',
   };
 
@@ -49,7 +50,7 @@ const Navbar = () => {
     backgroundColor: 'rgba(255, 238, 252, 1)',
     color: 'black',
     padding: '8px 16px',
-    borderRadius: '4px',
+    borderRadius: '20px', // Updated to have a rounded border
     textDecoration: 'none',
     fontWeight: 'bold',
   };
@@ -59,7 +60,7 @@ const Navbar = () => {
       <div style={logoContainerStyle}>
         <Link to="/" style={logoTextStyle}>
           <img
-            src="path_to_your_logo_image.png"
+        src={Logo}
             alt="Logo"
             width="30"
             height="30"
