@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ContactUs = () => {
+export const ContactUs = () => {
   const [fullName, setFullName] = useState('');
   const [address, setAddress] = useState('');
   const [phone, setPhone] = useState('');
@@ -62,4 +62,3 @@ const TextInput = ({ label, value, onChangeText }) => {
   );
 };
 
-export default ContactUs;
