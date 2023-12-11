@@ -4,9 +4,10 @@ import './index.css';
 import { Header } from './Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Herosection } from './components/Herosection';
-import { ContactUs } from './components/ContactUs';
 import { Cards } from './components/Cards';
 import { Benifits } from './components/Benifits';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -14,11 +15,7 @@ root.render(
     <Herosection />
     <Cards/>
     <Benifits/>
-    <ContactUs/>
-  
-  </>
-    
-    
+    <Contact/>
+    <Footer/>
+  </>  
 );
-
-

@@ -9,12 +9,15 @@ export const Herosection = ()=>{
     return(
         <>
             <div className="container mt-5 mb-5 pb-5">
-                <div className="row mt-5 mb-5">
+                <div className="row mt-5 mb-5 sm-mb-5">
                     <div className="col-md-6 col-lg-6 col-sm-12">
-                    <h1 style={{fontSize:"3rem"}}>Brainstorm your book easily.</h1>
-                    <p>World-class companies use Writealy AI writing platform to unlock brainstorming for publishing a book.</p>
-                    <button style={{borderRadius:"30px",padding:"10px",marginLeft:"15px",border:"2px solid black",width:"170px"}}>Request a demo</button> 
-                    <button style={{backgroundColor:"#EB7A65", borderRadius:"30px",padding:"10px",marginLeft:"20px",border:"2px solid black",width:"170px"}}>Try for free</button>
+                    <p className='fs-1 fw-bold mb-0' style={{
+                      backgroundImage: 'linear-gradient(to right, #494AAA, #EB7A65, #D9DEED)',WebkitBackgroundClip: 'text',color: 'transparent',}}>Brainstorm</p>
+                        <h1 style={{fontSize:"3rem"}}> your book</h1>
+                        <h1 style={{fontSize:"3rem"}}>easily.</h1>
+                        <p>World-class companies use Writealy AI writing platform to unlock brainstorming for publishing a book.</p>
+                        <button style={{borderRadius:"30px",padding:"10px",marginLeft:"15px",border:"2px solid black",width:"170px"}}>Request a demo</button> 
+                        <button style={{backgroundColor:"#EB7A65", borderRadius:"30px",padding:"10px",marginLeft:"20px",border:"2px solid black",width:"170px"}}>Try for free</button>
                     </div>
                     <div className="col-md-6 col-lg-6 col-sm-12">
                         <Figure>
